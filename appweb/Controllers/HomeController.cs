@@ -1,6 +1,7 @@
 ﻿using appweb.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Net.NetworkInformation;
 
 namespace appweb.Controllers
 {
@@ -17,6 +18,12 @@ namespace appweb.Controllers
         {
             return View();
         }
+
+        public IActionResult MinhaTela()
+        {
+         return View();
+        }
+
 
         public IActionResult Privacy()
         {
